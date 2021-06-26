@@ -4,7 +4,7 @@ import java.util.function.Function;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		String imageName = "1.jpg";
+		String imageName = "Images/1.jpg";
 		FuzzyIntensifier intensifier;
 		ImageModifier modifier = new ImageModifier(imageName);
 		
@@ -23,7 +23,7 @@ public class Main {
 		Function<Integer, Integer> blueModifier = (Integer pixelRGBValue) -> {
 			return FuzzyIntensifier.intensifyUsingFuzzyInt(pixelRGBValue, maxPixelValue, averagePixelValue,degree);
 		};
-		modifier.modifyPixels("1-NEW.tif", redModifier, greenModifier, blueModifier);
+		modifier.modifyPixels("Images/1-NEWwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww.tif", redModifier, greenModifier, blueModifier);
 		
 		/*Function<Integer, Integer> identity = (Integer x) -> {
 			return x;};
